@@ -1,0 +1,27 @@
+{
+  "name": "angular-file-input",
+  "main": "angular-file-input.js",
+  "version": "0.0.1",
+  "homepage": "https://github.com/twhitbeck/angular-file-input",
+  "authors": [
+    "Tim Whitbeck <twhitbeck@gmail.com>"
+  ],
+  "description": "A simple AngularJS extension to marry input[type=\"file\"] with ng-model",
+  "keywords": [
+    "angular",
+    "angularjs",
+    "input",
+    "file"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.3"
+  }
+}
