@@ -9,7 +9,7 @@ angular.module('tw.directives.fileInput').directive('input', function() {
         return;
       }
 
-      var element = el[0], multiple = ~~attrs.multiple;
+      var element = el[0], multiple = !!attrs.multiple;
 
       el.on('change', function(e) {
         scope.$apply(function() {
