@@ -12,9 +12,9 @@ angular.module('tw.directives.fileInput').directive('input', function() {
       var element = el[0], multiple = !!attrs.multiple;
 
       el.on('change', function(e) {
-        scope.$apply(function() {
-          ctrl.$setViewValue(multiple ? element.files : element.files[0]);
-        });
+        ctrl.$setViewValue(multiple ? element.files : element.files[0]);
+
+        scope.$$phase || scope.$apply();
       });
 
       ctrl.$render = function() {
